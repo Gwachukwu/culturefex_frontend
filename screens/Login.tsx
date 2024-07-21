@@ -2,6 +2,7 @@ import { Image, StyleSheet, Text, View } from "react-native";
 import React, { useState } from "react";
 import { colors } from "../utils/constant";
 import Input from "../components/Input/Input";
+import CustomButton from "../components/CustomButton/CustomButton";
 
 const Login = () => {
   const [data, setData] = useState({
@@ -34,6 +35,7 @@ const Login = () => {
         value={data.password}
         onChangeText={handleChange("password")}
       />
+      <CustomButton title="Login" onPress={() => null} />
     </View>
   );
 };
